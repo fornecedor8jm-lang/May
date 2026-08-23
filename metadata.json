@@ -1,0 +1,6 @@
+{
+  "name": "May Arts - Comissões de Desenho & Rastreio de Pedidos",
+  "description": "Sistema completo de pedidos de arte personalizada com geração de ID único, integração com WhatsApp, rastreamento de status em tempo real e painel administrativo da artista May.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
