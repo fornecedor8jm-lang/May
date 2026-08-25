@@ -28,7 +28,7 @@ const DEFAULT_SETTINGS = {
     {
       id: 'icon',
       name: 'Icon',
-      price: 'R$ 1,00',
+      price: 'R$ 10,00',
       unit: '/ un',
       features: [
         'Rosto e ombros detalhados',
@@ -41,7 +41,7 @@ const DEFAULT_SETTINGS = {
     {
       id: 'chibi',
       name: 'Chibi',
-      price: 'R$ 1,50',
+      price: 'R$ 10,00',
       unit: '/ un',
       features: [
         'Estilo super fofinho e compacto',
@@ -55,7 +55,7 @@ const DEFAULT_SETTINGS = {
     {
       id: 'meio_corpo',
       name: 'Meio Corpo',
-      price: 'R$ 3,50',
+      price: 'R$ 15,00',
       unit: '/ un',
       features: [
         'Da cintura para cima',
@@ -68,7 +68,7 @@ const DEFAULT_SETTINGS = {
     {
       id: 'corpo_todo',
       name: 'Corpo Todo',
-      price: 'R$ 5,00',
+      price: 'R$ 20,00',
       unit: '/ un',
       features: [
         'Personagem de corpo inteiro',
@@ -81,7 +81,7 @@ const DEFAULT_SETTINGS = {
     {
       id: 'cenario',
       name: 'Cenário',
-      price: 'R$ 6,50',
+      price: 'R$ 25,00',
       unit: '/ un',
       features: [
         'Cenário detalhado e ambientação',

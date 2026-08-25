@@ -86,10 +86,10 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({
     customerName: '',
     contact: '',
     contactType: 'whatsapp' as 'whatsapp' | 'instagram' | 'email' | 'outro',
-    artType: 'Chibi (R$ 1,50)',
+    artType: 'Chibi (R$ 10,00)',
     details: '',
     referenceLinks: '',
-    price: 'R$ 1,50',
+    price: 'R$ 10,00',
     estimatedDelivery: '',
     initialStatus: 'RECEBIDO' as OrderStatus,
   });
@@ -358,7 +358,7 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({
     const newPkg: PricePackage = {
       id: newId,
       name: 'Novo Estilo',
-      price: 'R$ 5,00',
+      price: 'R$ 20,00',
       unit: '/ un',
       features: ['Ilustração personalizada', 'Fundo simples', 'Alta resolução (PNG)'],
       tag: 'Novo',
@@ -821,7 +821,7 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({
                                   required
                                   value={pkg.price}
                                   onChange={e => handlePriceFieldChange(index, 'price', e.target.value)}
-                                  placeholder="Ex: R$ 1,50"
+                                  placeholder="Ex: R$ 10,00"
                                   className="w-full px-3 py-2 rounded-xl border border-[#FFD9E4] focus:border-[#F65D8E] bg-[#FFFBFD] text-xs font-bold text-[#F65D8E] outline-none"
                                 />
                               </div>

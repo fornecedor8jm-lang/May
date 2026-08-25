@@ -10,7 +10,7 @@ export const INITIAL_SETTINGS: SiteSettings = {
     {
       id: 'icon',
       name: 'Icon',
-      price: 'R$ 1,00',
+      price: 'R$ 10,00',
       unit: '/ un',
       features: [
         'Rosto e ombros detalhados',
@@ -23,7 +23,7 @@ export const INITIAL_SETTINGS: SiteSettings = {
     {
       id: 'chibi',
       name: 'Chibi',
-      price: 'R$ 1,50',
+      price: 'R$ 10,00',
       unit: '/ un',
       features: [
         'Estilo super fofinho e compacto',
@@ -37,7 +37,7 @@ export const INITIAL_SETTINGS: SiteSettings = {
     {
       id: 'meio_corpo',
       name: 'Meio Corpo',
-      price: 'R$ 3,50',
+      price: 'R$ 15,00',
       unit: '/ un',
       features: [
         'Da cintura para cima',
@@ -50,7 +50,7 @@ export const INITIAL_SETTINGS: SiteSettings = {
     {
       id: 'corpo_todo',
       name: 'Corpo Todo',
-      price: 'R$ 5,00',
+      price: 'R$ 20,00',
       unit: '/ un',
       features: [
         'Personagem de corpo inteiro',
@@ -63,7 +63,7 @@ export const INITIAL_SETTINGS: SiteSettings = {
     {
       id: 'cenario',
       name: 'Cenário',
-      price: 'R$ 6,50',
+      price: 'R$ 25,00',
       unit: '/ un',
       features: [
         'Cenário detalhado e ambientação',
