@@ -266,7 +266,7 @@ export const OrderTracker: React.FC<OrderTrackerProps> = ({
           {currentOrder.status !== 'CANCELADO' ? (
             <div className="mb-8">
               <h4 className="text-xs font-bold uppercase tracking-wider text-[#8A7A84] mb-4">
-                Progresso da Comissão
+                Progresso do Pedido
               </h4>
 
               <div className="relative">
@@ -351,7 +351,7 @@ export const OrderTracker: React.FC<OrderTrackerProps> = ({
 
                 {currentOrder.price && (
                   <div className="pt-2 border-t border-[#FFF0F5] flex items-center justify-between">
-                    <span className="text-[#8A7A84] font-medium text-xs">Valor da comissão:</span>
+                    <span className="text-[#8A7A84] font-medium text-xs">Valor do pedido:</span>
                     <strong className="text-[#F65D8E] font-bold text-sm">{currentOrder.price}</strong>
                   </div>
                 )}
@@ -401,7 +401,7 @@ export const OrderTracker: React.FC<OrderTrackerProps> = ({
           {/* Bottom WhatsApp Contact Button */}
           <div className="mt-8 pt-4 border-t border-[#FFD9E4] flex flex-col sm:flex-row items-center justify-between gap-3">
             <p className="text-xs text-[#8A7A84] text-center sm:text-left">
-              💬 Precisa enviar mais imagens ou falar com a May sobre o pedido <strong>#{currentOrder.id}</strong>?
+              💬 Precisa enviar mais referências ou falar com a May sobre o pedido <strong>#{currentOrder.id}</strong>?
             </p>
             <a
               id="tracker-whatsapp-contact-btn"

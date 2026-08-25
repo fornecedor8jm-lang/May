@@ -7,7 +7,7 @@ export const HowItWorks: React.FC = () => {
       num: 1,
       icon: FileText,
       title: 'Você preenche o pedido',
-      desc: 'Escolha o tipo de arte, conte sua ideia, detalhes dos personagens e adicione links de referências.',
+      desc: 'Escolha uma ilustração ou marca d’água, conte sua ideia, envie os detalhes da sua marca e adicione referências.',
       tag: 'Formulário Fácil',
     },
     {
@@ -28,7 +28,7 @@ export const HowItWorks: React.FC = () => {
       num: 4,
       icon: HeartHandshake,
       title: 'Acompanhe pelo site & Receba',
-      desc: 'Consulte o andamento da arte a qualquer momento pelo código. Você recebe os arquivos em alta qualidade!',
+      desc: 'Consulte o andamento do seu pedido a qualquer momento pelo código. Você recebe os arquivos finais em alta qualidade!',
       tag: 'Rastreio 24h',
     },
   ];
@@ -43,7 +43,7 @@ export const HowItWorks: React.FC = () => {
           Como funciona o seu pedido?
         </h2>
         <p className="text-sm sm:text-base text-[#8A7A84] max-w-xl mx-auto">
-          Um fluxo simples e transparente para você não precisar ficar na dúvida sobre o andamento do seu desenho.
+          Um fluxo simples e transparente para você acompanhar sua ilustração ou marca d’água do início à entrega.
         </p>
       </div>
 

@@ -31,6 +31,7 @@ export const OrderForm: React.FC<OrderFormProps> = ({
   const currentSelectValue = artPackages.some(p => p.name === selectedArtType)
     ? selectedArtType
     : selectedArtType || (artPackages[0]?.name ?? 'Chibi');
+  const isWatermarkSelected = currentSelectValue === 'Marca d’água';
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -104,7 +105,7 @@ export const OrderForm: React.FC<OrderFormProps> = ({
           Fazer um Pedido ✍️
         </h2>
         <p className="text-sm sm:text-base text-[#8A7A84] max-w-lg mx-auto">
-          Me conta o que você sonhou! Ao enviar, o sistema gera o seu <strong>#ID único</strong> e abre o WhatsApp com todas as informações organizadas.
+          Conte sua ideia! Ao enviar, o sistema gera o seu <strong>#ID único</strong> e abre o WhatsApp com todas as informações organizadas para a May analisar.
         </p>
       </div>
 
@@ -182,7 +183,7 @@ export const OrderForm: React.FC<OrderFormProps> = ({
           {/* Tipo de Arte */}
           <div>
             <label htmlFor="tipo-arte-select" className="block text-xs sm:text-sm font-bold text-[#4A3B47] mb-1.5">
-              Tipo de Arte <span className="text-[#F65D8E]">*</span>
+              Tipo de Serviço <span className="text-[#F65D8E]">*</span>
             </label>
             <select
               id="tipo-arte-select"
@@ -204,7 +205,7 @@ export const OrderForm: React.FC<OrderFormProps> = ({
           {/* Detalhes da Arte */}
           <div>
             <label htmlFor="detalhes-textarea" className="block text-xs sm:text-sm font-bold text-[#4A3B47] mb-1.5">
-              O que você quer no desenho? <span className="text-[#F65D8E]">*</span>
+              {isWatermarkSelected ? 'Como você imagina sua marca d’água?' : 'O que você quer no desenho?'} <span className="text-[#F65D8E]">*</span>
             </label>
             <textarea
               id="detalhes-textarea"
@@ -212,7 +213,9 @@ export const OrderForm: React.FC<OrderFormProps> = ({
               rows={4}
               value={details}
               onChange={e => setDetails(e.target.value)}
-              placeholder="Descreva sua ideia com carinho: quantos personagens, roupas, pose, cores preferidas, tema ou fundo..."
+              placeholder={isWatermarkSelected
+                ? 'Conte o nome da sua marca, estilo, símbolos, cores, formato e onde pretende aplicar...'
+                : 'Descreva sua ideia com carinho: quantos personagens, roupas, pose, cores preferidas, tema ou fundo...'}
               className="w-full px-4 py-3 rounded-2xl border-2 border-[#FFD9E4] focus:border-[#F65D8E] bg-[#FFFBFD] text-sm text-[#4A3B47] placeholder-[#B5A5AF] outline-none transition-colors resize-y"
             />
           </div>
@@ -221,18 +224,20 @@ export const OrderForm: React.FC<OrderFormProps> = ({
           <div>
             <label htmlFor="refs-textarea" className="block text-xs sm:text-sm font-bold text-[#4A3B47] mb-1.5 flex items-center gap-1.5">
               <LinkIcon className="w-3.5 h-3.5 text-[#C77DFF]" />
-              <span>Referências de imagem (Links do Pinterest, Drive, Imgur, etc.)</span>
+              <span>{isWatermarkSelected ? 'Referências da marca (logo, símbolos, paleta ou estilo)' : 'Referências de imagem (Links do Pinterest, Drive, Imgur, etc.)'}</span>
             </label>
             <textarea
               id="refs-textarea"
               rows={2}
               value={referenceLinks}
               onChange={e => setReferenceLinks(e.target.value)}
-              placeholder="Cole links de referências aqui (fotos de personagens, paleta de cores ou poses que você gostou)"
+              placeholder={isWatermarkSelected
+                ? 'Cole links de logos, estilos, paletas ou referências que combinam com sua marca'
+                : 'Cole links de referências aqui (fotos de personagens, paleta de cores ou poses que você gostou)'}
               className="w-full px-4 py-2.5 rounded-2xl border-2 border-[#FFD9E4] focus:border-[#F65D8E] bg-[#FFFBFD] text-sm text-[#4A3B47] placeholder-[#B5A5AF] outline-none transition-colors resize-y"
             />
             <p className="text-[11px] text-[#8A7A84] mt-1">
-              ✨ Se preferir, você também pode enviar as imagens diretamente no WhatsApp logo após enviar este formulário.
+              ✨ {isWatermarkSelected ? 'Depois do formulário, você também pode enviar seu logo ou referências diretamente no WhatsApp.' : 'Se preferir, você também pode enviar as imagens diretamente no WhatsApp logo após enviar este formulário.'}
             </p>
           </div>
 

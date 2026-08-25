@@ -31,8 +31,8 @@ export const Hero: React.FC<HeroProps> = ({ settings, onNavigate }) => {
         </h1>
 
         <p className="text-lg sm:text-xl text-[#7A6975] max-w-2xl mx-auto mb-8 font-medium leading-relaxed">
-          Transformo suas ideias em ilustrações cheias de personalidade e afeto: 
-          <strong className="text-[#4A3B47] font-semibold"> chibis, icons, metadinhas</strong> e artes personalizadas.
+          Transformo suas ideias em ilustrações cheias de personalidade e também crio marcas d’água para proteger e profissionalizar suas imagens.
+          <strong className="text-[#4A3B47] font-semibold"> Chibis, icons, metadinhas e assinaturas visuais</strong> feitas para você.
         </p>
 
         {/* Action Buttons */}

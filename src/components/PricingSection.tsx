@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check, Sparkles, Heart, ArrowRight } from 'lucide-react';
+import { Check, Heart, ArrowRight, ShieldCheck } from 'lucide-react';
 import { PricePackage } from '../types';
 
 interface PricingSectionProps {
@@ -16,14 +16,14 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ packages, onSele
             Tabela de Valores
           </span>
           <h2 className="text-2xl sm:text-4xl font-bold text-[#4A3B47] mt-3 mb-3">
-            Estilos & Pacotes de Desenho
+            Ilustrações & Identidade Visual
           </h2>
           <p className="text-sm sm:text-base text-[#8A7A84] max-w-xl mx-auto">
-            Escolha o formato que mais combina com a sua ideia. Todos incluem envio de prévias e arquivos finais em alta definição.
+            Escolha uma ilustração personalizada ou fortaleça a presença da sua marca com uma assinatura visual feita para você.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5 items-stretch">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 items-stretch">
           {packages.map((pkg) => {
             const isHighlight = pkg.isHighlight;
             return (
@@ -96,7 +96,34 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ packages, onSele
           })}
         </div>
 
-        <div className="mt-10 bg-white/70 border border-[#FFD9E4] rounded-2xl p-4 sm:p-5 text-center max-w-2xl mx-auto text-xs text-[#8A7A84]">
+        <div className="mt-10 bg-gradient-to-br from-[#F7EEFF] via-white to-[#FFF0F5] border-2 border-[#E9D5FF] rounded-3xl p-5 sm:p-7 max-w-4xl mx-auto shadow-sm">
+          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-5 text-center sm:text-left">
+            <div className="w-14 h-14 rounded-2xl bg-white text-[#C77DFF] flex items-center justify-center shrink-0 shadow-sm">
+              <ShieldCheck className="w-7 h-7" />
+            </div>
+            <div className="flex-1">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-[#C77DFF]">Novo serviço da May</span>
+              <h3 className="text-lg sm:text-xl font-bold text-[#4A3B47] mt-1">Sua marca também pode aparecer em cada foto</h3>
+              <p className="text-xs sm:text-sm text-[#7A6975] leading-relaxed mt-1.5">
+                Crio uma marca d’água personalizada com assinatura visual única, versões em PNG transparente preta, branca e colorida, além de variações em ícone ou selo.
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={() => onSelectPackage('Marca d’água')}
+              className="shrink-0 bg-[#C77DFF] hover:bg-[#B35BE8] text-white font-bold text-xs sm:text-sm px-5 py-3 rounded-full shadow-sm transition-all cursor-pointer active:scale-95"
+            >
+              Quero minha marca d’água
+            </button>
+          </div>
+          <div className="mt-5 pt-4 border-t border-[#E9D5FF] grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-[11px] text-[#7A6975]">
+            <span className="flex items-center justify-center sm:justify-start gap-1.5">✓ Arquivos prontos para o celular</span>
+            <span className="flex items-center justify-center sm:justify-start gap-1.5">✓ Variações para qualquer fundo</span>
+            <span className="flex items-center justify-center sm:justify-start gap-1.5">✓ Guia de uso no Canva ou CapCut</span>
+          </div>
+        </div>
+
+        <div className="mt-5 bg-white/70 border border-[#FFD9E4] rounded-2xl p-4 sm:p-5 text-center max-w-2xl mx-auto text-xs text-[#8A7A84]">
           💡 <strong>Tem uma ideia diferente ou projeto especial?</strong> Você pode selecionar a opção <em>"Outro"</em> no formulário abaixo e descrever como deseja seu desenho!
         </div>
       </div>

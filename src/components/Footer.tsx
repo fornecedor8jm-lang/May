@@ -27,7 +27,7 @@ export const Footer: React.FC<FooterProps> = ({ settings, onOpenAdmin, onNavigat
         </div>
 
         <p className="text-xs sm:text-sm text-[#8A7A84] max-w-sm mb-6">
-          Ilustrações personalizadas feitas com muito amor e dedicação para você se apaixonar.
+          Ilustrações e marcas d’água personalizadas, feitas com muito amor e dedicação para valorizar sua marca.
         </p>
 
         {/* Quick Links */}

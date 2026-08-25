@@ -10,24 +10,28 @@ export const FaqSection: React.FC = () => {
       a: 'O prazo varia conforme a complexidade e a fila atual (normalmente de 3 a 7 dias úteis após a confirmação do pagamento). Você sempre pode acompanhar o status em tempo real aqui no site digitando o seu código #ID!',
     },
     {
-      q: '🔄 Como funciona a revisão do desenho?',
-      a: 'Cada comissão inclui 1 rodada de revisão gratuita na fase de esboço/lineart (quando o status estiver em "Aguardando Revisão"). Mudanças adicionais ou após a pintura finalizada podem ter um pequeno ajuste de valor acordado previamente.',
+      q: '🔄 Como funciona a revisão do pedido?',
+      a: 'Cada pedido inclui 1 rodada de ajustes na fase de prévia. Para marcas d’água, você pode revisar detalhes como nome, símbolos, cores e formato antes da finalização. Alterações adicionais ou mudanças de direção podem ter um pequeno ajuste de valor acordado previamente.',
     },
     {
-      q: '🔍 Preciso mandar mensagem perguntando como está meu desenho?',
-      a: 'Não precisa! Foi para isso que criamos a área "Acompanhar Pedido". Assim que a May atualiza o status ou posta uma prévia, você vê tudo na hora pelo seu código de pedido #MA-XXXX.',
+      q: '🔍 Preciso mandar mensagem perguntando como está meu pedido?',
+      a: 'Não precisa! Foi para isso que criamos a área "Acompanhar Pedido". Assim que a May atualiza o status ou envia uma prévia, você vê tudo na hora pelo seu código de pedido #MA-XXXX.',
     },
     {
-      q: '📩 Como vou receber minha arte final?',
-      a: 'Você recebe os arquivos digitais em alta resolução (PNG com e sem fundo transparente, prontos para usar como foto de perfil, wallpapers ou impressão) diretamente pelo contato informado (Instagram, WhatsApp ou E-mail).',
+      q: '📩 Como recebo minha arte ou marca d’água?',
+      a: 'Ilustrações são entregues em alta resolução, e marcas d’água são entregues em PNG com fundo transparente nas versões preta, branca e colorida. O material é enviado pelo contato informado (Instagram, WhatsApp ou e-mail). Para marcas d’água, também podem ser criadas variações simplificadas em ícone ou selo, conforme o briefing.',
+    },
+    {
+      q: '📱 Como aplico a marca d’água nas minhas fotos?',
+      a: 'Junto com os arquivos, você recebe um passo a passo prático para aplicar sua marca no celular usando ferramentas gratuitas como Canva ou CapCut.',
     },
     {
       q: '💰 Quais são as formas de pagamento?',
       a: 'Aceitamos Pix (aprovação imediata para entrar na fila de produção). Ao enviar o pedido, você receberá a chave Pix e o orçamento confirmado.',
     },
     {
-      q: '🎨 Posso usar a arte comercialmente?',
-      a: 'Os valores da tabela são para uso pessoal (redes sociais, fotos de perfil, presentes). Para produtos comerciais, logos de empresas ou revenda, combinamos uma taxa de licença comercial.',
+      q: '🎨 Posso usar a marca d’água no meu negócio?',
+      a: 'Sim. O serviço é pensado para profissionais, criadores e pequenos negócios usarem a marca em suas próprias fotos e conteúdos. Uso em produtos para revenda, campanhas de terceiros ou cessão de direitos deve ser combinado previamente.',
     },
   ];
 

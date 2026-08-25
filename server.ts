@@ -91,6 +91,20 @@ const DEFAULT_SETTINGS = {
       ],
       tag: 'Especial',
     },
+    {
+      id: 'marca_dagua',
+      name: 'Marca d’água',
+      price: 'Sob consulta',
+      unit: '',
+      features: [
+        'Assinatura visual única para sua marca',
+        'PNG transparente em preto, branco e colorido',
+        'Variações simplificadas em ícone ou selo',
+        'Guia prático para usar no Canva ou CapCut',
+      ],
+      isHighlight: true,
+      tag: 'Novo serviço',
+    },
   ],
 };
 

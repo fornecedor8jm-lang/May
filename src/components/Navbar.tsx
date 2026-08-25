@@ -42,7 +42,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 May<span className="text-[#C77DFF]">Arts</span>
                 <span className="text-xs text-[#FF8FAB]">✦</span>
               </div>
-              <p className="text-[11px] text-[#8A7A84] font-medium leading-none">Comissões & Ilustrações</p>
+              <p className="text-[11px] text-[#8A7A84] font-medium leading-none">Ilustrações & Marcas d’água</p>
             </div>
           </button>
 
