@@ -103,6 +103,20 @@ function saveStoredOrders(orders: Order[]) {
   }
 }
 
+function migrateStoredSettings(settings: SiteSettings): SiteSettings {
+  const legacyPrices = ['R$ 1,00', 'R$ 1,50', 'R$ 3,50', 'R$ 5,00', 'R$ 6,50'];
+  const storedPrices = settings.prices || [];
+  const isLegacyPriceTable =
+    storedPrices.length === legacyPrices.length &&
+    storedPrices.every((pkg, index) => pkg.price === legacyPrices[index]);
+
+  if (!isLegacyPriceTable) return settings;
+
+  const migratedSettings = { ...settings, prices: INITIAL_SETTINGS.prices };
+  localStorage.setItem(LOCAL_STORAGE_SETTINGS_KEY, JSON.stringify(migratedSettings));
+  return migratedSettings;
+}
+
 function getStoredSettings(): SiteSettings {
   try {
     const raw = localStorage.getItem(LOCAL_STORAGE_SETTINGS_KEY);
@@ -110,7 +124,7 @@ function getStoredSettings(): SiteSettings {
       localStorage.setItem(LOCAL_STORAGE_SETTINGS_KEY, JSON.stringify(INITIAL_SETTINGS));
       return INITIAL_SETTINGS;
     }
-    return JSON.parse(raw);
+    return migrateStoredSettings(JSON.parse(raw));
   } catch {
     return INITIAL_SETTINGS;
   }
